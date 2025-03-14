@@ -85,7 +85,6 @@ span {
 }
 
 .bet-button {
-  flex-wrap: nowrap;
   text-transform: uppercase;
   background: transparent;
   width: 256px;
