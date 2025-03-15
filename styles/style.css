@@ -13,12 +13,13 @@ header {
 
 .header__menu-list {
   display: flex;
-  justify-content: start;
+  justify-content: space-around;
   list-style: none;
-  gap: 25px;
+  gap: 12px;
   width: 400px;
   font-family: Raleway, serif;
   font-weight: normal;
+  font-size: 18px;
 }
 
 .header__menu-list li.non-active {
@@ -30,6 +31,9 @@ header {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   font-size: 18px;
+  width: 240px;
+  height: 98;
+  line-height: 1.25;
   font-family: Raleway, serif;
   font-weight: normal;
 }
@@ -45,11 +49,10 @@ header {
   background-repeat: no-repeat;
   background-position: center;
   min-height: 757px;
-  padding: 165px 50px 50px 50px;
 }
 
 .overlay {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.6);
   background-blend-mode: darken;
 }
 
@@ -58,20 +61,25 @@ span {
 }
 
 .cover__title {
+  display: block;
   text-transform: uppercase;
   letter-spacing: 30px;
   font-family: Raleway, serif;
   font-weight: bold;
   font-size: 100px;
   color: white;
+  width: 1000px;
+  height: 385px;
+  line-height: 1.3;
+  padding: 165px 50px 0 50px;
 }
 
 .aligned-text_center {
-  text-align: center;
+  padding-left: 334px;
 }
 
 .aligned-text_right {
-  text-align: right;
+  padding-left: 613px;
 }
 
 .cover__description {
@@ -84,8 +92,11 @@ span {
   font-family: Raleway, serif;
   font-weight: normal;
   text-transform: uppercase;
-  word-spacing: 22px;
-  margin-top: 106px;
+  word-spacing: 19px;
+  position: absolute;
+  right: 50px;
+  left: 50px;
+  bottom: 50px;
   letter-spacing: mixed;
 }
 
@@ -93,7 +104,7 @@ span {
   text-transform: uppercase;
   background: transparent;
   width: 256px;
-  height: 51px;
+  min-height: 51px;
   font-size: 22px;
   box-shadow: none;
   border: 1px solid white;
@@ -108,6 +119,7 @@ span {
 }
 
 .lots__heading {
+  text-transform: uppercase;
   font-size: 40px;
   margin-left: 40px;
   margin-bottom: 27px;
@@ -150,9 +162,10 @@ span {
 }
 
 .card__title {
+  text-transform: uppercase;
   font-size: 22px;
   text-decoration: underline;
-  text-decoration-color: gray;
+  text-decoration-color: white;
   font-family: Raleway, serif;
   font-weight: bold;
 }
@@ -161,6 +174,7 @@ span {
   font-size: 20px;
   font-family: Raleway, serif;
   font-weight: normal;
+  margin-bottom: 9px;
 }
 
 .lots__look-more-link {
@@ -214,8 +228,10 @@ span {
 
 .about__text {
   font-size: 20px;
+  line-height: 1.21;
   font-family: Raleway, serif;
   font-weight: normal;
+  width: 663px;
 }
 
 .about__text.margin {
@@ -225,7 +241,7 @@ span {
 .footer {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: start;
   padding: 0 50px 82px 50px;
 }
 
@@ -237,6 +253,7 @@ span {
   font-size: 18px;
   font-family: Raleway, serif;
   font-weight: normal;
+  line-height: 1.1;
 }
 
 .footer__menu-list li.non-active {
